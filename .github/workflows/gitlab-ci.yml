@@ -69,14 +69,17 @@ jobs:
       -
         name: Install verilator
         run: |
-          git clone -b nba-enable-initial-final https://github.com/RootCubed/verilator.git ~/verilator
           sudo apt-get update
-          sudo apt-get install libfl-dev
-          cd ~/verilator
-          autoconf
-          ./configure
-          make -j `nproc`
-          sudo make install
+          sudo apt-get install -y verilator
+        # run: |
+        #   git clone -b nba-enable-initial-final https://github.com/RootCubed/verilator.git ~/verilator
+        #   sudo apt-get update
+        #   sudo apt-get install libfl-dev
+        #   cd ~/verilator
+        #   autoconf
+        #   ./configure
+        #   make -j `nproc`
+        #   sudo make install
       -
         name: Build sim
         run: make idma_sim_all
