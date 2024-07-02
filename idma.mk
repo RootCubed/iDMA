@@ -5,7 +5,7 @@
 # Authors:
 # - Thomas Benz <tbenz@iis.ee.ethz.ch>
 
-BENDER      ?= ./bender
+BENDER      ?= bender
 CAT         ?= cat
 DOT         ?= dot
 GIT         ?= git
