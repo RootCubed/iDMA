@@ -68,9 +68,12 @@ jobs:
           echo "PATH=.:$PATH" >> ${GITHUB_ENV}
       -
         name: Install verilator
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y verilator
+        uses: v0xnihili/install-verilator-action@main
+        with:
+          version: v5.026
+        # run: |
+        #   sudo apt-get update
+        #   sudo apt-get install -y verilator
         # run: |
         #   git clone -b nba-enable-initial-final https://github.com/RootCubed/verilator.git ~/verilator
         #   sudo apt-get update

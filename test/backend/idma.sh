@@ -8,6 +8,7 @@
 # - Liam Braun <libraun@student.ethz.ch>
 
 if [ ! -f third_party/rapidyaml.hpp ]; then
+    mkdir -p third_party
     wget https://github.com/biojppm/rapidyaml/releases/download/v0.7.0/rapidyaml-0.7.0.hpp -O third_party/rapidyaml.hpp
 fi
 
