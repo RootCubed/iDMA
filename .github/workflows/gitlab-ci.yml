@@ -85,7 +85,7 @@ jobs:
         run: make idma_sim_all
       -
         name: Run simulation
-        run:
+        run: |
           cd test/backend
           ./idma.sh
           ./obj_dir/tb_idma ../../jobs/backend_r_axi_w_obi/simple.yml
