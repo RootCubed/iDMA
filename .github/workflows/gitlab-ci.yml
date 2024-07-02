@@ -70,6 +70,7 @@ jobs:
         name: Install verilator
         run: |
           git clone -b nba-enable-initial-final https://github.com/RootCubed/verilator.git ~/verilator
+          cd ~/verilator
           autoconf
           ./configure
           make -j$(nproc)
