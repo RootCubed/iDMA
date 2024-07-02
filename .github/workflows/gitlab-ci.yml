@@ -87,5 +87,6 @@ jobs:
         name: Run simulation
         run: |
           cd test/backend
+          chmod +x ./idma.sh
           ./idma.sh
           ./obj_dir/tb_idma ../../jobs/backend_r_axi_w_obi/simple.yml
